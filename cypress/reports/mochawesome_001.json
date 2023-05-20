@@ -1,0 +1,374 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 9,
+    "passes": 0,
+    "pending": 0,
+    "failures": 9,
+    "start": "2022-07-14T23:38:47.892Z",
+    "end": "2022-07-14T23:42:41.151Z",
+    "duration": 233259,
+    "testsRegistered": 9,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f4de0a19-de0f-4366-b190-9fea712b17a3",
+      "title": "",
+      "fullFile": "cypress/integration/02-06-login_spec.js",
+      "file": "cypress/integration/02-06-login_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b655315e-4b1b-48ac-a069-d72bd798321b",
+          "title": "2 - Crie todos os elementos que devem respeitar os atributos descritos no protótipo para a tela de login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Tem os data-testids email-input, password-input e login-submit-btn",
+              "fullTitle": "2 - Crie todos os elementos que devem respeitar os atributos descritos no protótipo para a tela de login Tem os data-testids email-input, password-input e login-submit-btn",
+              "timedOut": null,
+              "duration": 30121,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/');\ncy.get('[data-testid=\"email-input\"]');\ncy.get('[data-testid=\"password-input\"]');\ncy.get('[data-testid=\"login-submit-btn\"]');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ESOCKETTIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ESOCKETTIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:45251/__cypress/runner/cypress_runner.js:163608:82\n    at visitFailedByErr (http://localhost:45251/__cypress/runner/cypress_runner.js:162912:12)\n    at http://localhost:45251/__cypress/runner/cypress_runner.js:163607:11\n    at tryCatcher (http://localhost:45251/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:45251/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:45251/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:45251/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:45251/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://localhost:45251/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:45251/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:45251/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:45251/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:45251/__cypress/tests?p=cypress/integration/02-06-login_spec.js:106:8)\n\nFrom Node.js Internals:\n  Error: ESOCKETTIMEDOUT\n      at ClientRequest.<anonymous> (/home/myrella/.cache/Cypress/9.7.0/Cypress/resources/app/node_modules/@cypress/request/request.js:808:19)\n      at Object.onceWrapper (node:events:509:28)\n      at ClientRequest.emit (node:events:390:28)\n      at Socket.emitRequestTimeout (node:_http_client:763:9)\n      at Object.onceWrapper (node:events:509:28)\n      at Socket.emit (node:events:402:35)\n      at Socket._onTimeout (node:net:501:8)\n      at listOnTimeout (node:internal/timers:557:17)\n      at processTimers (node:internal/timers:500:7)\n  ",
+                "diff": null
+              },
+              "uuid": "70fc211e-4869-4b75-97f7-459a504c862c",
+              "parentUUID": "b655315e-4b1b-48ac-a069-d72bd798321b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "70fc211e-4869-4b75-97f7-459a504c862c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 30121,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "40e86fe7-bafe-4d0c-a348-335f77724c97",
+          "title": "3 - Desenvolva a tela de maneira que a pessoa consiga escrever seu email no input de email e sua senha no input de senha",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "É possível escrever o email e a senha",
+              "fullTitle": "3 - Desenvolva a tela de maneira que a pessoa consiga escrever seu email no input de email e sua senha no input de senha É possível escrever o email e a senha",
+              "timedOut": null,
+              "duration": 30111,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/');\ncy.get('[data-testid=\"email-input\"]').type('email@mail.com');\ncy.get('[data-testid=\"email-input\"]').should('have.value', 'email@mail.com');\ncy.get('[data-testid=\"password-input\"]').type('1234567');\ncy.get('[data-testid=\"password-input\"]').should('have.value', '1234567');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ESOCKETTIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ESOCKETTIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:45251/__cypress/runner/cypress_runner.js:163608:82\n    at visitFailedByErr (http://localhost:45251/__cypress/runner/cypress_runner.js:162912:12)\n    at http://localhost:45251/__cypress/runner/cypress_runner.js:163607:11\n    at tryCatcher (http://localhost:45251/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:45251/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:45251/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:45251/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:45251/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://localhost:45251/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:45251/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:45251/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:45251/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:45251/__cypress/tests?p=cypress/integration/02-06-login_spec.js:114:8)\n\nFrom Node.js Internals:\n  Error: ESOCKETTIMEDOUT\n      at ClientRequest.<anonymous> (/home/myrella/.cache/Cypress/9.7.0/Cypress/resources/app/node_modules/@cypress/request/request.js:808:19)\n      at Object.onceWrapper (node:events:509:28)\n      at ClientRequest.emit (node:events:390:28)\n      at Socket.emitRequestTimeout (node:_http_client:763:9)\n      at Object.onceWrapper (node:events:509:28)\n      at Socket.emit (node:events:402:35)\n      at Socket._onTimeout (node:net:501:8)\n      at listOnTimeout (node:internal/timers:557:17)\n      at processTimers (node:internal/timers:500:7)\n  ",
+                "diff": null
+              },
+              "uuid": "30e35469-cc6e-469a-931f-d7f72e086a20",
+              "parentUUID": "40e86fe7-bafe-4d0c-a348-335f77724c97",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "30e35469-cc6e-469a-931f-d7f72e086a20"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 30111,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "3d28bcac-2fc3-4eff-b7b6-583282c79aae",
+          "title": "4 - Desenvolva a tela de maneira que o formulário só seja válido após um email válido e uma senha de mais de 6 caracteres serem preenchidos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "O botão deve estar desativado se o email for inválido",
+              "fullTitle": "4 - Desenvolva a tela de maneira que o formulário só seja válido após um email válido e uma senha de mais de 6 caracteres serem preenchidos O botão deve estar desativado se o email for inválido",
+              "timedOut": null,
+              "duration": 30098,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/');\ncy.get('[data-testid=\"login-submit-btn\"]').should('be.disabled');\ncy.get('[data-testid=\"email-input\"]').type('email@mail');\ncy.get('[data-testid=\"password-input\"]').type('1234567');\ncy.get('[data-testid=\"login-submit-btn\"]').should('be.disabled');\ncy.get('[data-testid=\"email-input\"]').clear().type('email.com');\ncy.get('[data-testid=\"login-submit-btn\"]').should('be.disabled');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ESOCKETTIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ESOCKETTIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:45251/__cypress/runner/cypress_runner.js:163608:82\n    at visitFailedByErr (http://localhost:45251/__cypress/runner/cypress_runner.js:162912:12)\n    at http://localhost:45251/__cypress/runner/cypress_runner.js:163607:11\n    at tryCatcher (http://localhost:45251/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:45251/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:45251/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:45251/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:45251/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://localhost:45251/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:45251/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:45251/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:45251/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:45251/__cypress/tests?p=cypress/integration/02-06-login_spec.js:123:8)\n\nFrom Node.js Internals:\n  Error: ESOCKETTIMEDOUT\n      at ClientRequest.<anonymous> (/home/myrella/.cache/Cypress/9.7.0/Cypress/resources/app/node_modules/@cypress/request/request.js:808:19)\n      at Object.onceWrapper (node:events:509:28)\n      at ClientRequest.emit (node:events:390:28)\n      at Socket.emitRequestTimeout (node:_http_client:763:9)\n      at Object.onceWrapper (node:events:509:28)\n      at Socket.emit (node:events:402:35)\n      at Socket._onTimeout (node:net:501:8)\n      at listOnTimeout (node:internal/timers:557:17)\n      at processTimers (node:internal/timers:500:7)\n  ",
+                "diff": null
+              },
+              "uuid": "5c86a547-4257-4f99-911e-897d58ad9374",
+              "parentUUID": "3d28bcac-2fc3-4eff-b7b6-583282c79aae",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O botão deve estar desativado se a senha deve tiver 6 caracteres ou menos",
+              "fullTitle": "4 - Desenvolva a tela de maneira que o formulário só seja válido após um email válido e uma senha de mais de 6 caracteres serem preenchidos O botão deve estar desativado se a senha deve tiver 6 caracteres ou menos",
+              "timedOut": null,
+              "duration": 30099,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/');\ncy.get('[data-testid=\"login-submit-btn\"]').should('be.disabled');\ncy.get('[data-testid=\"email-input\"]').type('email@mail.com');\ncy.get('[data-testid=\"password-input\"]').type('123456');\ncy.get('[data-testid=\"login-submit-btn\"]').should('be.disabled');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ESOCKETTIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ESOCKETTIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:45251/__cypress/runner/cypress_runner.js:163608:82\n    at visitFailedByErr (http://localhost:45251/__cypress/runner/cypress_runner.js:162912:12)\n    at http://localhost:45251/__cypress/runner/cypress_runner.js:163607:11\n    at tryCatcher (http://localhost:45251/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:45251/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:45251/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:45251/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:45251/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://localhost:45251/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:45251/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:45251/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:45251/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:45251/__cypress/tests?p=cypress/integration/02-06-login_spec.js:132:8)\n\nFrom Node.js Internals:\n  Error: ESOCKETTIMEDOUT\n      at ClientRequest.<anonymous> (/home/myrella/.cache/Cypress/9.7.0/Cypress/resources/app/node_modules/@cypress/request/request.js:808:19)\n      at Object.onceWrapper (node:events:509:28)\n      at ClientRequest.emit (node:events:390:28)\n      at Socket.emitRequestTimeout (node:_http_client:763:9)\n      at Object.onceWrapper (node:events:509:28)\n      at Socket.emit (node:events:402:35)\n      at Socket._onTimeout (node:net:501:8)\n      at listOnTimeout (node:internal/timers:557:17)\n      at processTimers (node:internal/timers:500:7)\n  ",
+                "diff": null
+              },
+              "uuid": "b75e1858-44b2-470d-b572-c85891288d35",
+              "parentUUID": "3d28bcac-2fc3-4eff-b7b6-583282c79aae",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O botão deve estar ativado se o email e a senha forem válidos",
+              "fullTitle": "4 - Desenvolva a tela de maneira que o formulário só seja válido após um email válido e uma senha de mais de 6 caracteres serem preenchidos O botão deve estar ativado se o email e a senha forem válidos",
+              "timedOut": null,
+              "duration": 30105,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/');\ncy.get('[data-testid=\"login-submit-btn\"]').should('be.disabled');\ncy.get('[data-testid=\"email-input\"]').type('email@mail.com');\ncy.get('[data-testid=\"password-input\"]').type('1234567');\ncy.get('[data-testid=\"login-submit-btn\"]').should('not.be.disabled');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ESOCKETTIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ESOCKETTIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:45251/__cypress/runner/cypress_runner.js:163608:82\n    at visitFailedByErr (http://localhost:45251/__cypress/runner/cypress_runner.js:162912:12)\n    at http://localhost:45251/__cypress/runner/cypress_runner.js:163607:11\n    at tryCatcher (http://localhost:45251/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:45251/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:45251/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:45251/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:45251/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://localhost:45251/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:45251/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:45251/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:45251/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:45251/__cypress/tests?p=cypress/integration/02-06-login_spec.js:139:8)\n\nFrom Node.js Internals:\n  Error: ESOCKETTIMEDOUT\n      at ClientRequest.<anonymous> (/home/myrella/.cache/Cypress/9.7.0/Cypress/resources/app/node_modules/@cypress/request/request.js:808:19)\n      at Object.onceWrapper (node:events:509:28)\n      at ClientRequest.emit (node:events:390:28)\n      at Socket.emitRequestTimeout (node:_http_client:763:9)\n      at Object.onceWrapper (node:events:509:28)\n      at Socket.emit (node:events:402:35)\n      at Socket._onTimeout (node:net:501:8)\n      at listOnTimeout (node:internal/timers:557:17)\n      at processTimers (node:internal/timers:500:7)\n  ",
+                "diff": null
+              },
+              "uuid": "8c82b993-32d6-4506-a1b9-e28ec8262e36",
+              "parentUUID": "3d28bcac-2fc3-4eff-b7b6-583282c79aae",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica a cobertura de 45% da tela de Login",
+              "fullTitle": "4 - Desenvolva a tela de maneira que o formulário só seja válido após um email válido e uma senha de mais de 6 caracteres serem preenchidos Verifica a cobertura de 45% da tela de Login",
+              "timedOut": null,
+              "duration": 12273,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.task('getCoverage', getId()).its('Login.functions.pct').should('be.gte', 45.00);\ncy.task('getCoverage', getId()).its('Login.lines.pct').should('be.gte', 45.00);\ncy.task('getCoverage', getId()).its('Login.branches.pct').should('be.gte', 45.00);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected 0 to be at least 45",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected 0 to be at least 45\n    at Context.eval (http://localhost:45251/__cypress/tests?p=cypress/integration/02-06-login_spec.js:146:64)",
+                "diff": null
+              },
+              "uuid": "7309d99d-bde6-4c1d-83a4-9de298b98569",
+              "parentUUID": "3d28bcac-2fc3-4eff-b7b6-583282c79aae",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5c86a547-4257-4f99-911e-897d58ad9374",
+            "b75e1858-44b2-470d-b572-c85891288d35",
+            "8c82b993-32d6-4506-a1b9-e28ec8262e36",
+            "7309d99d-bde6-4c1d-83a4-9de298b98569"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 102575,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "a2cf819a-6544-4ecc-9ab4-d43f66876be0",
+          "title": "5 - Após a submissão do formulário, salve no localStorage o e-mail da pessoa usuária na chave `user` e os tokens nas chaves `mealsToken` e `cocktailsToken`",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Após a submissão user, mealsToken e cocktailsToken devem estar salvos em localStorage",
+              "fullTitle": "5 - Após a submissão do formulário, salve no localStorage o e-mail da pessoa usuária na chave `user` e os tokens nas chaves `mealsToken` e `cocktailsToken` Após a submissão user, mealsToken e cocktailsToken devem estar salvos em localStorage",
+              "timedOut": null,
+              "duration": 30117,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/', {\n  onBeforeLoad(win) {\n    win.localStorage.clear();\n  }\n});\ncy.get('[data-testid=\"login-submit-btn\"]').should('be.disabled');\ncy.window().then(win => {\n  expect(win.localStorage.getItem('mealsToken')).to.be.null;\n  expect(win.localStorage.getItem('cocktailsToken')).to.be.null;\n});\ncy.get('[data-testid=\"email-input\"]').type('email@mail.com');\ncy.get('[data-testid=\"password-input\"]').type('1234567');\ncy.get('[data-testid=\"login-submit-btn\"]').click();\ncy.window().then(win => {\n  expect(JSON.parse(win.localStorage.getItem('user'))).to.deep.eq({\n    email: 'email@mail.com'\n  });\n  expect(win.localStorage.getItem('mealsToken')).to.eq('1');\n  expect(win.localStorage.getItem('cocktailsToken')).to.eq('1');\n  win.localStorage.clear();\n});",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ESOCKETTIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ESOCKETTIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:45251/__cypress/runner/cypress_runner.js:163608:82\n    at visitFailedByErr (http://localhost:45251/__cypress/runner/cypress_runner.js:162912:12)\n    at http://localhost:45251/__cypress/runner/cypress_runner.js:163607:11\n    at tryCatcher (http://localhost:45251/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:45251/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:45251/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:45251/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:45251/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://localhost:45251/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:45251/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:45251/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:45251/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:45251/__cypress/tests?p=cypress/integration/02-06-login_spec.js:153:8)\n\nFrom Node.js Internals:\n  Error: ESOCKETTIMEDOUT\n      at ClientRequest.<anonymous> (/home/myrella/.cache/Cypress/9.7.0/Cypress/resources/app/node_modules/@cypress/request/request.js:808:19)\n      at Object.onceWrapper (node:events:509:28)\n      at ClientRequest.emit (node:events:390:28)\n      at Socket.emitRequestTimeout (node:_http_client:763:9)\n      at Object.onceWrapper (node:events:509:28)\n      at Socket.emit (node:events:402:35)\n      at Socket._onTimeout (node:net:501:8)\n      at listOnTimeout (node:internal/timers:557:17)\n      at processTimers (node:internal/timers:500:7)\n  ",
+                "diff": null
+              },
+              "uuid": "02d45a3c-bc48-42e4-ab02-4c1e1c4fc05f",
+              "parentUUID": "a2cf819a-6544-4ecc-9ab4-d43f66876be0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "02d45a3c-bc48-42e4-ab02-4c1e1c4fc05f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 30117,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "e0ca2bf3-1660-494b-855e-347bdd27d980",
+          "title": "6 - Redirecione a pessoa usuária para a tela principal de receitas de comidas após a submissão e validação com sucesso do login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "A rota muda para a tela principal de receitas de comidas",
+              "fullTitle": "6 - Redirecione a pessoa usuária para a tela principal de receitas de comidas após a submissão e validação com sucesso do login A rota muda para a tela principal de receitas de comidas",
+              "timedOut": null,
+              "duration": 30110,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/', {\n  onBeforeLoad(win) {\n    win.localStorage.clear();\n  }\n});\ncy.get('[data-testid=\"login-submit-btn\"]').should('be.disabled');\ncy.window().then(win => {\n  expect(win.localStorage.getItem('user')).to.be.null;\n});\ncy.get('[data-testid=\"email-input\"]').type('email@mail.com');\ncy.get('[data-testid=\"password-input\"]').type('1234567');\ncy.get('[data-testid=\"login-submit-btn\"]').click();\ncy.location().should(loc => expect(loc.pathname).to.eq('/foods'));\ncy.window().then(win => {\n  win.localStorage.clear();\n});",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ESOCKETTIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ESOCKETTIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:45251/__cypress/runner/cypress_runner.js:163608:82\n    at visitFailedByErr (http://localhost:45251/__cypress/runner/cypress_runner.js:162912:12)\n    at http://localhost:45251/__cypress/runner/cypress_runner.js:163607:11\n    at tryCatcher (http://localhost:45251/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:45251/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:45251/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:45251/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:45251/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://localhost:45251/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:45251/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:45251/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:45251/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:45251/__cypress/tests?p=cypress/integration/02-06-login_spec.js:179:8)\n\nFrom Node.js Internals:\n  Error: ESOCKETTIMEDOUT\n      at ClientRequest.<anonymous> (/home/myrella/.cache/Cypress/9.7.0/Cypress/resources/app/node_modules/@cypress/request/request.js:808:19)\n      at Object.onceWrapper (node:events:509:28)\n      at ClientRequest.emit (node:events:390:28)\n      at Socket.emitRequestTimeout (node:_http_client:763:9)\n      at Object.onceWrapper (node:events:509:28)\n      at Socket.emit (node:events:402:35)\n      at Socket._onTimeout (node:net:501:8)\n      at listOnTimeout (node:internal/timers:557:17)\n      at processTimers (node:internal/timers:500:7)\n  ",
+                "diff": null
+              },
+              "uuid": "aeec73b9-16c7-43b0-8886-42a199818a47",
+              "parentUUID": "e0ca2bf3-1660-494b-855e-347bdd27d980",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica a cobertura de 90% da tela de Login",
+              "fullTitle": "6 - Redirecione a pessoa usuária para a tela principal de receitas de comidas após a submissão e validação com sucesso do login Verifica a cobertura de 90% da tela de Login",
+              "timedOut": null,
+              "duration": 10031,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.task('getCoverage', getId()).its('Login.functions.pct').should('be.gte', 90.00);\ncy.task('getCoverage', getId()).its('Login.lines.pct').should('be.gte', 90.00);\ncy.task('getCoverage', getId()).its('Login.branches.pct').should('be.gte', 90.00);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected 0 to be at least 90",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected 0 to be at least 90\n    at Context.eval (http://localhost:45251/__cypress/tests?p=cypress/integration/02-06-login_spec.js:198:64)",
+                "diff": null
+              },
+              "uuid": "90714d74-9990-4d62-98ff-50cfed7afead",
+              "parentUUID": "e0ca2bf3-1660-494b-855e-347bdd27d980",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "aeec73b9-16c7-43b0-8886-42a199818a47",
+            "90714d74-9990-4d62-98ff-50cfed7afead"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 40141,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
